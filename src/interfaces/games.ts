@@ -13,6 +13,7 @@ export interface Game {
       platform: Platform;
     }
   ];
+  metacritic: number;
 }
 
 export interface FetchGameResponse {
