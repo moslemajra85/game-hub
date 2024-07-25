@@ -11,9 +11,10 @@ import useGenres from '../hooks/useGenres';
 
 interface Props {
   onSelectGenre: (genre: Genre) => void;
+  selectedGenre: Genre | null;
 }
 
-const GenresList = ({ onSelectGenre }: Props) => {
+const GenresList = ({ onSelectGenre, selectedGenre }: Props) => {
   const { data, error, isLoading } = useGenres();
 
   if (isLoading) {
@@ -36,6 +37,7 @@ const GenresList = ({ onSelectGenre }: Props) => {
               onClick={() => onSelectGenre(genre)}
               variant="link"
               fontSize="lg"
+              isActive={selectedGenre?.id === genre.id ? true : false}
             >
               {genre.name}
             </Button>
