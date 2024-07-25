@@ -36,7 +36,7 @@ const GenresList = ({ onSelectGenre, selectedGenre }: Props) => {
             <Button
               onClick={() => onSelectGenre(genre)}
               variant="link"
-              fontSize="lg"
+              fontSize="sm"
               isActive={selectedGenre?.id === genre.id ? true : false}
             >
               {genre.name}
