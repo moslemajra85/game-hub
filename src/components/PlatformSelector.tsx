@@ -13,7 +13,7 @@ import { Platform } from '../interfaces/games';
 
 interface Props {
   onPlatformSelected: (platform: Platform) => void;
-  selectedPlatform: Platform;
+  selectedPlatform: Platform | null;
 }
 
 const PlatformSelector = ({ onPlatformSelected, selectedPlatform }: Props) => {
