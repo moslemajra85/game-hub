@@ -42,7 +42,7 @@ const SortSelector = ({ selectedSort, onSort }: Props) => {
         {sortCriteria.map((criteria, i) => (
           <MenuItem
             value={criteria.value}
-            onClick={() => onSort(criteria.label)}
+            onClick={() => onSort(criteria.value)}
             key={criteria.value}
           >
             {criteria.label}
