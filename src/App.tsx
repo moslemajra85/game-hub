@@ -55,17 +55,17 @@ function App() {
       </Show>
       <GridItem area="main">
         <Box paddingLeft={2}>
-        <GameHeading gameQuery={gameQuery} />
-        <HStack spacing={5} marginBottom={5}>
-          <PlatformSelector
-            selectedPlatform={gameQuery.platform}
-            onPlatformSelected={onPlatformSelected}
-          />
-          <SortSelector selectedSort={gameQuery.sortOrder} onSort={OnSort} />
-        </HStack>
-
+          <GameHeading gameQuery={gameQuery} />
+          <HStack spacing={5} marginBottom={5}>
+            <PlatformSelector
+              selectedPlatform={gameQuery.platform}
+              onPlatformSelected={onPlatformSelected}
+            />
+            <SortSelector selectedSort={gameQuery.sortOrder} onSort={OnSort} />
+          </HStack>
         </Box>
         <GameGrid gameQuery={gameQuery} />
+        <Box bg="brand.900">Welcome</Box>
       </GridItem>
     </Grid>
   );
