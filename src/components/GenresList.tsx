@@ -9,7 +9,7 @@ import {
 } from '@chakra-ui/react';
 import { Genre } from '../interfaces/genres';
 import useGenres from '../hooks/useGenres';
-
+import genres from '../data/genres';
 interface Props {
   onSelectGenre: (genre: Genre) => void;
   selectedGenre: Genre | null;
@@ -23,6 +23,7 @@ const GenresList = ({ onSelectGenre, selectedGenre }: Props) => {
   }
 
   if (error) return null;
+  
   return (
     <>
     <Heading fontSize='2xl' marginBottom={3}>Genres</Heading>
