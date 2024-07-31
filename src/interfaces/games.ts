@@ -14,11 +14,10 @@ export interface Game {
     }
   ];
   metacritic: number;
- }
+  rating_top: number;
+}
 
 export interface FetchGameResponse {
   count: number;
   results: Game[];
 }
-
- 
