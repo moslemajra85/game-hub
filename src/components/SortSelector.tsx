@@ -39,7 +39,7 @@ const SortSelector = ({ selectedSort, onSort }: Props) => {
         Order By: {selectedSort || 'Relevance'}
       </MenuButton>
       <MenuList>
-        {sortCriteria.map((criteria, i) => (
+        {sortCriteria.map((criteria) => (
           <MenuItem
             value={criteria.value}
             onClick={() => onSort(criteria.value)}
